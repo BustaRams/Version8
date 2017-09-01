@@ -990,11 +990,12 @@ ul.social-icons {
 }
 @media screen and (max-width: 768px) {
   #suite{
-    display: initial;
+    // it was display: initial; now it's display: table; to show the color in mobile
+    display: table;
     // uncomment the next line and comment the previous to hide/show circles on mobile
     // display: none;
     .cirbox1, .cirbox2{
-      display: none;
+      // display: none;
     }
   }
   #text-model{
