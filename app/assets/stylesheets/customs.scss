@@ -481,7 +481,7 @@ ul.social-icons {
 
     position: absolute;
     width: 75%;
-    height: calc(100vh - 70px);
+    height: calc(90rem - 70px);
     opacity: 0.7;
     -webkit-clip-path: circle(100% at 0 0);
     clip-path: circle(95% at 0 0);
@@ -952,7 +952,7 @@ ul.social-icons {
   z-index: 10;
   background: #22A1C3;
   width: 100vw;
-  height: calc(100vh - 70px);
+  height: calc(90rem - 70px);
 }
 
 
@@ -984,6 +984,8 @@ ul.social-icons {
 @media screen and (max-width: 768px) {
   #suite{
     display: initial;
+    // uncomment the next line and comment the previous to hide/show circles on mobile
+    // display: none;
     .cirbox1, .cirbox2{
       display: none;
     }
