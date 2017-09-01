@@ -230,21 +230,23 @@ ul.social-icons {
     background-color: #00aced;
   }
 }
-
-.fa-instagram {
-  padding:10px 12px;
-  -o-transition:.5s;
-  -ms-transition:.5s;
-  -moz-transition:.5s;
-  -webkit-transition:.5s;
-  transition: .5s;
-  background-color: #322f30;
-  &:hover{
-    background: #d6249f;
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
-    box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+.modal-body{
+  .fa-instagram {
+    padding:10px 12px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+    &:hover{
+      background: #d6249f;
+      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+      box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+    }
   }
 }
+
 
 #surligne {
   text-shadow : 2px 2px 4px #000000;
@@ -349,8 +351,8 @@ ul.social-icons {
   .mcrew {
     border-bottom-width: 2px;
     border-bottom-style: groove;
-    border-bottom-color: #eee;    
-    @media(min-width: 768px) {    
+    border-bottom-color: #eee;
+    @media(min-width: 768px) {
       padding-bottom: 46px;
       padding-top: 46px;
       margin: 40px auto;
@@ -368,7 +370,7 @@ ul.social-icons {
       }
     }
     i {
-      font-size: 50px; 
+      font-size: 50px;
       color: #d1dfe5;
       @media(max-width: 320px) {
         font-size: 20px;
@@ -378,7 +380,7 @@ ul.social-icons {
   .mcrewp {
     @media(min-width: 1226px) {
       padding-left: 70px;
-      padding-right: 70px;      
+      padding-right: 70px;
     }
     p {
       font-size: 18px;
@@ -390,8 +392,8 @@ ul.social-icons {
     }
   }
   .respon {
-    h2 {    
-      padding-top: 15px;      
+    h2 {
+      padding-top: 15px;
       padding-bottom: 30px;
       color: #2dace2;
       font-size: 30px;
@@ -401,16 +403,16 @@ ul.social-icons {
     ul {
       font-size: 19px;
       line-height: 30px;
-      li {        
+      li {
         padding: 15px 0;
-      }  
+      }
       li::before {
         content: "\2022";
         color: #2dace2;
         padding-right: 30px;
-      }      
-    }  
-  } 
+      }
+    }
+  }
 }
 
 #suite {
@@ -443,6 +445,7 @@ ul.social-icons {
     height: calc(314vh - 70px);
   }
   .cirbox1 {
+    background-image: image-url("blue.png");
     position: absolute;
     width: 40%;
     height: calc(60vh - 50px);
@@ -470,10 +473,15 @@ ul.social-icons {
     }
   }
   .cirbox2 {
+    background-image: image-url("blue.png");
+    z-index: 10;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+
     position: absolute;
     width: 75%;
     height: calc(100vh - 70px);
-    background: #418CFD;
     opacity: 0.7;
     -webkit-clip-path: circle(100% at 0 0);
     clip-path: circle(95% at 0 0);
@@ -570,12 +578,12 @@ ul.social-icons {
       }
     }
   }
-  .circle { 
+  .circle {
     border-radius: 50%;
     position: absolute;
     box-shadow: 5px 5px 5px 5px #004D59;
     background: #04BBFE;
-    width: 233px; 
+    width: 233px;
     height: 233px;
     z-index: 2;
     @media(max-width: 746px) {
@@ -590,7 +598,7 @@ ul.social-icons {
       }
       @media(min-width: 1024px) and (max-width: 1225px) {
         top: 230px;
-      }   
+      }
       div {
         width: 192px;
         left: 29px;
@@ -606,7 +614,7 @@ ul.social-icons {
           left: 10%;
           top: 53px;
         }
-      } 
+      }
     }
 
     &.cirpos2 {
@@ -619,7 +627,7 @@ ul.social-icons {
       }
       @media(min-width: 768px) and (max-width: 990px) {
         top: 100px;
-      }      
+      }
       div {
         width: 204px;
         left: 25px;
@@ -628,7 +636,7 @@ ul.social-icons {
         font-size: 16px;
         color: #000;
         z-index: 1;
-      } 
+      }
     }
     &.cirpos3 {
       width: 245px;
@@ -658,6 +666,63 @@ ul.social-icons {
       }
     }
     &.cirpos4 {
+      .fa-instagram {
+        background:
+          /////// Use radial gradients to get the rounded
+          /////// gradient effect in each corner
+
+          // left bottom
+          radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%),
+          radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%),
+          // left top
+          radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),
+          radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%),
+          //  right top
+          radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%),
+          radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%),
+          // right bottom
+          radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent),
+
+          /////// create a base coat to smooth
+          /////// corner gradients
+          linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+
+        border-radius: .2em;
+        height: 1em;
+        position: relative;
+        width: 1em;
+        margin-left: 14px;
+        margin-top: 8px;
+
+        &:before,
+        &:after {
+          color: #fff;
+          content: '';
+          display: block;
+          position: absolute;
+          border: .075em solid;
+        }
+
+        &:before {
+          border-radius: inherit;
+          height: .75em;
+          transform: translate(.125em, .125em);
+          width: .75em;
+        }
+
+        &:after {
+          border-radius: 1em;
+          box-shadow: .2em -.2em 0 -.16em;
+          height: .4em;
+          transform: translate(.3em, .3em);
+          width: .4em;
+        }
+        transition: all .2s ease-in-out;
+      }
+      .fa-instagram:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+      }
       left: 25px;
       background-image: linear-gradient(to right, transparent 50%, #ffc43c 0);
       &:before {
@@ -735,7 +800,7 @@ ul.social-icons {
         width: 118px;
         height: 118px;
         border-radius: 50%;
-        background: #f99d0d; 
+        background: #f99d0d;
         left: 57px;
         top: 61px;
         @media(min-width: 320px) and (max-width: 746px){
@@ -749,10 +814,20 @@ ul.social-icons {
         @media(min-width: 360px) and (max-width: 640px){
           left: 56px;
           top: 60px;
-        }       
+        }
       }
     }
     &.cirpos5 {
+      .fa-youtube-play{
+        color: #E42B26;
+        margin-left: 19px;
+        margin-top: 10px;
+        transition: all .2s ease-in-out;
+      }
+      .fa-youtube-play:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+      }
       right: 10px;
       background-image: linear-gradient(to right, transparent 50%, #ffc43c 0);
       &:before {
@@ -847,17 +922,17 @@ ul.social-icons {
         @media(min-width: 360px) and (max-width: 640px){
           left: 58px;
           top: 58px;
-        }  
+        }
         @media(min-width: 320px) and (max-width: 568px){
           left: 58px;
           top: 58px;
-        }           
+        }
       }
     }
-  } 
+  }
   span {
-    left: 85px; 
-    top: 25px; 
+    left: 85px;
+    top: 25px;
     position: relative;
     font-size: 35px;
     color: #fff;
@@ -874,11 +949,8 @@ ul.social-icons {
 
 
 #suite {
-  background-image: image-url("blue.png");
   z-index: 10;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size:cover;
+  background: #22A1C3;
   width: 100vw;
   height: calc(100vh - 70px);
 }
@@ -908,4 +980,18 @@ ul.social-icons {
   text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
   margin-right: 17px;
   margin-top: -55px;
+}
+@media screen and (max-width: 768px) {
+  #suite{
+    display: initial;
+    .cirbox1, .cirbox2{
+      display: none;
+    }
+  }
+  #text-model{
+    display: block;
+  }
+  .fa-instagram{
+    margin-left: 22px !important;
+  }
 }

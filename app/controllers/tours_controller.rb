@@ -2,7 +2,7 @@ class ToursController < ApplicationController
   before_action :set_tour, only: [:show, :edit, :update, :destroy, :subscribe, :unsubscribe,
                                   :post_idea, :delete_idea, :kick_user, :unlock_tour, :lock_tour]
 
-  before_action :authenticate_user!, except: [:index, :contest, :new_contest_participant]
+  before_action :authenticate_user!, except: [:index, :dreamlife, :new_contest_participant]
 
   # GET /tours
   def index
@@ -188,7 +188,7 @@ class ToursController < ApplicationController
     end
   end
 
-  def contest
+  def dreamlife
     @new_participant = ContestParticipant.new
   end
 
